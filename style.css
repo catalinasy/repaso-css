@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: black;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+#header img {
+  height: 80%;
+}
+
+#header .texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+#banner {
+  margin: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar img {
+  height: 10%;
+}
+
+#presentacion {
+  background-color: #d4d5db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 20%;
+}
+
+#logo img {
+  height: 70%;
+}
+
+.queSomos {
+  width: 65%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
+}
+
+.sociales {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sociales img {
+  height: 20%;
+  padding: 0 7%;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.descripcion {
+  font-size: 15px;
+  color: black;
+  margin: 0;
+}
+
+#fotos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.avatar img {
+  height: 20%;
+}
+
+.footer {
+  background-color: black;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.footer img {
+  height: 50%;
+  padding: 10%;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+  .avatar img {
+    height: 100%;
+    padding: 10% 0;
+  }
+
+  #banner img {
+    width: 100%;
+  }
+
+  .footer div {
+    width: 20%;
+  }
+
+  #fotos {
+    height: 30%;
+    align-items: stretch;
+  }
+  .avatar {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+  }
+
+  #header .texto {
+    font-size: 25px;
+    width: 60%;
+  }
+  #logo img {
+    height: 30%;
+  }
+  .sociales img {
+    height: 10%;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .descripcion {
+    font-size: 20px;
+  }
+  .footer div {width: 15%;}
+  .footer img {padding: 0 20% 5% 0;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    #header {height: 7%;}
+    #header img {height: 60%;}
+    #header .texto {width: 80%;}
+    .sociales {display: none;}
+    #logo img {height: 40%;}
+    .queSomos {width: 83%;}
+    .title {font-size: 25px;}
+    .descripcion{font-size: 12px;}
+    .avatar {flex-direction: column;}
+    .avatar img {height: 15%;}
+    .avatar .texto {display: flex; 
+    
+    flex-direction: column;
+    justify-content: center;
+    }
+    .texto p{margin: 0;}
+    .texto {margin: 15% 0;}
+    .footer div {width: 40%;}
+}
